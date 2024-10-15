@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile Number" required>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        <input type="text" id="address" name="address" placeholder="Enter Your Address" required>
+        <button type="button" onclick="saveContact()">Save</button>
+    </form>
+
+    <div class="box">
+        <button id="hideButton" onclick="toggleInsertedRecords()">Hide Records</button>
+        <table id="contactTable">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th>Email Address</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+   <script src="main.js"></script>
+
+</body>
+
+</html>
